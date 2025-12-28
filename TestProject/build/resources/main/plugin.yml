@@ -1,0 +1,92 @@
+name: TestProject
+version: '1.0.0'
+main: com.testproject.TestProject
+api-version: '1.21'
+description: Essential commands plugin
+author: LuminaryxApp
+
+commands:
+  gamemode:
+    description: Sets the player's gamemode
+    usage: /<command> <type> [player]
+    aliases: [gm]
+  god:
+    description: Toggles god mode (invincibility)
+    usage: /<command> [player]
+  openinv:
+    description: Opens a player's inventory
+    usage: /<command> <player>
+    aliases: [oi, invsee]
+  enderchest:
+    description: Opens a player's ender chest
+    usage: /<command> [player]
+    aliases: [ec, echest]
+  fix:
+    description: Repairs the item in your hand
+    usage: /<command>
+    aliases: [repair]
+  tpa:
+    description: Sends a teleport request to a player
+    usage: /<command> <player>
+  tpaccept:
+    description: Accepts a teleport request
+    usage: /<command>
+    aliases: [tpyes]
+  tpdeny:
+    description: Denies a teleport request
+    usage: /<command>
+    aliases: [tpno]
+  trash:
+    description: Opens a disposal menu
+    usage: /<command>
+    aliases: [disposal, bin]
+
+permissions:
+  testproject.gamemode:
+    description: Allows using /gamemode
+    default: op
+  testproject.gamemode.others:
+    description: Allows setting other players' gamemode
+    default: op
+  testproject.gamemode.survival:
+    description: Allows setting survival mode
+    default: op
+  testproject.gamemode.creative:
+    description: Allows setting creative mode
+    default: op
+  testproject.gamemode.adventure:
+    description: Allows setting adventure mode
+    default: op
+  testproject.gamemode.spectator:
+    description: Allows setting spectator mode
+    default: op
+  testproject.god:
+    description: Allows using /god
+    default: op
+  testproject.god.others:
+    description: Allows toggling god mode for others
+    default: op
+  testproject.openinv:
+    description: Allows using /openinv
+    default: op
+  testproject.enderchest:
+    description: Allows using /enderchest for your own ender chest
+    default: true
+  testproject.enderchest.others:
+    description: Allows opening others' ender chests
+    default: op
+  testproject.fix:
+    description: Allows using /fix
+    default: op
+  testproject.tpa:
+    description: Allows using /tpa
+    default: true
+  testproject.tpaccept:
+    description: Allows accepting teleport requests
+    default: true
+  testproject.tpdeny:
+    description: Allows denying teleport requests
+    default: true
+  testproject.trash:
+    description: Allows using /trash
+    default: true

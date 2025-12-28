@@ -1,0 +1,66 @@
+# ============================================
+# TestProject - Messages Configuration
+# ============================================
+# All plugin messages can be customized here.
+# Use '&' for color codes and '%placeholder%' for variables.
+
+# General messages
+prefix: "&8[&bTestProject&8] "
+no-permission: "&cYou don't have permission to do that."
+player-not-found: "&cPlayer not found."
+console-not-allowed: "&cThis command cannot be run from console without specifying a player."
+player-only: "&cThis command can only be run by players."
+
+# Gamemode messages
+gamemode:
+  changed-self: "&aYour gamemode has been set to &e%gamemode%&a."
+  changed-other: "&aSet &e%player%&a's gamemode to &e%gamemode%&a."
+  changed-by-other: "&aYour gamemode has been set to &e%gamemode% &aby &e%sender%&a."
+  invalid-type: "&cInvalid gamemode. Use: survival, creative, adventure, or spectator."
+  no-permission-mode: "&cYou don't have permission to use %gamemode% mode."
+
+# God mode messages
+god:
+  enabled-self: "&aGod mode &eenabled&a. You are now invincible."
+  disabled-self: "&cGod mode &edisabled&c. You can now take damage."
+  enabled-other: "&aGod mode &eenabled &afor &e%player%&a."
+  disabled-other: "&cGod mode &edisabled &cfor &e%player%&c."
+  enabled-by-other: "&aGod mode has been &eenabled &afor you by &e%sender%&a."
+  disabled-by-other: "&cGod mode has been &edisabled &cfor you by &e%sender%&c."
+
+# OpenInv messages
+openinv:
+  opened: "&aOpened &e%player%&a's inventory."
+  self-not-allowed: "&cYou cannot open your own inventory with this command."
+
+# Enderchest messages
+enderchest:
+  opened-self: "&aOpened your ender chest."
+  opened-other: "&aOpened &e%player%&a's ender chest."
+
+# Fix messages
+fix:
+  repaired: "&aRepaired your item to full durability."
+  no-item: "&cYou must be holding an item to repair."
+  not-repairable: "&cThis item cannot be repaired."
+  already-repaired: "&cThis item is already at full durability."
+
+# TPA messages
+tpa:
+  sent: "&aTeleport request sent to &e%player%&a."
+  received: "&e%player% &awants to teleport to you. Use &a/tpaccept &7or &c/tpdeny&7."
+  accepted: "&aYou accepted &e%player%&a's teleport request."
+  accepted-notify: "&e%player% &aaccepted your teleport request. Teleporting..."
+  denied: "&cYou denied the teleport request."
+  denied-notify: "&e%player% &cdenied your teleport request."
+  no-pending: "&cYou have no pending teleport requests."
+  expired: "&cYour teleport request to &e%player% &chas expired."
+  requester-offline: "&cThe player who requested to teleport is no longer online."
+  self-not-allowed: "&cYou cannot send a teleport request to yourself."
+  already-pending: "&cYou already have a pending request to &e%player%&c."
+
+# Trash messages
+trash:
+  opened: "&aOpened trash bin. Items placed here will be destroyed."
+  disposed: "&7Items have been disposed."
+  title: "&8Trash Bin"

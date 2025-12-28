@@ -1,0 +1,12 @@
+# ============================================
+# TestProject - Main Configuration
+# ============================================
+
+# Plugin settings
+debug: false
+
+# TPA request timeout in seconds
+tpa-timeout: 60
+
+# Trash inventory size (must be multiple of 9, max 54)
+trash-size: 54
